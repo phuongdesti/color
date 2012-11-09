@@ -1,0 +1,81 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.item').click(function () {
+            $('body').css({ 'background-color': $(this).css('background-color') });
+            $('.item').removeClass('item_click');
+            $(this).addClass('item_click');
+
+        });
+        $('.item').hover(function () {
+            $(this).addClass('item_hover');
+        }, function () { $(this).removeClass('item_hover'); });
+    });
+
+
+
+
+</script>
+<style type="text/css">
+    .item
+    {
+        width: 150px;
+        height: 150px;
+        float: left;
+        margin: 10px;
+        border: solid 2px white;
+    }
+    .item_hover
+    {
+        background-color: #2ec103;
+    }
+    body
+    {
+        background-color: #69e2f8;
+    }
+
+    .item_click
+    {
+        border: solid 2px #f1f4c4;
+    }
+</style>
+<div class="container">
+
+
+    <div>
+        <div class="item" style="background-color: #0094ff;">
+        </div>
+        <div class="item" style="background-color: #b6ff00;">
+        </div>
+        <div class="item" style="background-color: #f3bf18;">
+        </div>
+        <div class="item" style="background-color: #08bdf8;">
+        </div>
+        <div class="item" style="background-color: #7d49ee;">
+        </div>
+        <div class="item" style="background-color: #f784d8;">
+        </div>
+        <div class="item" style="background-color: #e8f85c;">
+        </div>
+        <div class="item" style="background-color: #f86920;">
+        </div>
+        <div class="item" style="background-color: #0094ff;">
+        </div>
+        <div class="item" style="background-color: #b6ff00;">
+        </div>
+        <div class="item" style="background-color: #f3bf18;">
+        </div>
+        <div class="item" style="background-color: #08bdf8;">
+        </div>
+        <div class="item" style="background-color: #7d49ee;">
+        </div>
+        <div class="item" style="background-color: #f784d8;">
+        </div>
+        <div class="item" style="background-color: #e8f85c;">
+        </div>
+        <div class="item" style="background-color: #f86920;">
+        </div>
+    </div>
+</div>
