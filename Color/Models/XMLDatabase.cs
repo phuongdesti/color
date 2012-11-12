@@ -69,7 +69,7 @@ namespace Color.Models
         {
             MainStructure tenderdb = null;
             string folder = Current.DataFolder();
-            string file = Utility.GetLatestFile(folder, "Amfi *.dndata*");
+            string file = Utility.GetLatestFile(folder, "Color *.dndata*");
             if (string.IsNullOrEmpty(file)) return null;
             tenderdb = (MainStructure)Utility.LoadFile(file, typeof(MainStructure));
 
@@ -82,7 +82,7 @@ namespace Color.Models
         public static void SaveAmfiDB(string partnerid, string portalid, MainStructure tenderdb, string reason)
         {
             string folder =  Current.DataFolder();
-            string file = folder + "Amfi " + System.DateTime.Now.ToString(Current.TimeStamp) + " " + System.Text.RegularExpressions.Regex.Replace(reason, FileRegex, string.Empty) + ".dndata.gz";
+            string file = folder + "Color " + System.DateTime.Now.ToString(Current.TimeStamp) + " " + System.Text.RegularExpressions.Regex.Replace(reason, FileRegex, string.Empty) + ".dndata.gz";
             string sXML = Utility.Serialize(tenderdb, true);
             byte[] bXML = Utility.GZIP(ref sXML);
             System.IO.File.WriteAllBytes(file, bXML);
