@@ -21,8 +21,8 @@ namespace Color.Controllers
             mt.oColor.Add(new ColorInfo() { Name = "", Code = "#f3bf18;" });
             mt.oColor.Add(new ColorInfo() { Name = "", Code = "#f784d8;" });
             mt.oColor.Add(new ColorInfo() { Name = "", Code = "#08bdf8;" });
-
-           // mt.Save("add colors");
+            ViewBag.conme = Current.DataFolder();
+            //mt.Save("add colors");
 
             return View();
         }                                                      
