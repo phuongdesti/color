@@ -1,0 +1,40 @@
+<MainStructure>
+  <oColor>
+    <ColorInfo>
+      <ID>0</ID>
+      <Name />
+      <Code>#0094ff;</Code>
+    </ColorInfo>
+    <ColorInfo>
+      <ID>0</ID>
+      <Name />
+      <Code>#b6ff00;</Code>
+    </ColorInfo>
+    <ColorInfo>
+      <ID>0</ID>
+      <Name />
+      <Code>#b6ff00;</Code>
+    </ColorInfo>
+    <ColorInfo>
+      <ID>0</ID>
+      <Name />
+      <Code>#08bdf8;</Code>
+    </ColorInfo>
+    <ColorInfo>
+      <ID>0</ID>
+      <Name />
+      <Code>#f3bf18;</Code>
+    </ColorInfo>
+    <ColorInfo>
+      <ID>0</ID>
+      <Name />
+      <Code>#f784d8;</Code>
+    </ColorInfo>
+    <ColorInfo>
+      <ID>0</ID>
+      <Name />
+      <Code>#08bdf8;</Code>
+    </ColorInfo>
+  </oColor>
+  <a>0</a>
+</MainStructure>

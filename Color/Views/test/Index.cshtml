@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Color.Models.ColorInfo>
+@{
+    ViewBag.Title = "Index";
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.item').click(function () {
+            $('body').css({ 'background-color': $(this).css('background-color') });
+            $('.item').removeClass('item_click');
+            $(this).addClass('item_click');
+
+        });
+        $('.item').hover(function () {
+            $(this).addClass('item_hover');
+        }, function () { $(this).removeClass('item_hover'); });
+    });
+
+
+
+
+</script>
+<style type="text/css">
+    .item
+    {
+        width: 150px;
+        height: 150px;
+        float: left;
+        margin: 10px;
+        border: solid 2px white;
+    }
+    .item_hover
+    {
+        background-color: #2ec103;
+    }
+    body
+    {
+        background-color: #69e2f8;
+    }
+
+    .item_click
+    {
+        border: solid 2px #f1f4c4;
+    }
+</style>
+
+<h2>Index</h2>
+ 
+<div class="container">
+    <div>
+    @foreach (var item in Model)
+    {
+        <div class="item" style="background-color: @item.Code" >
+        </div>
+     
+    }
+
+    </div>
+</div>
+ 

@@ -31,7 +31,6 @@ E:\GitHubApp\Color\Color\bin\System.Web.Razor.xml
 E:\GitHubApp\Color\Color\bin\System.Web.WebPages.xml
 E:\GitHubApp\Color\Color\bin\System.Web.WebPages.Deployment.xml
 E:\GitHubApp\Color\Color\bin\System.Web.WebPages.Razor.xml
-E:\GitHubApp\Color\Color\obj\Debug\Color.csprojResolveAssemblyReference.cache
 E:\GitHubApp\Color\Color\obj\Debug\Color.dll
 E:\GitHubApp\Color\Color\obj\Debug\Color.pdb
 D:\MVC\color\Color\bin\Color.dll
@@ -70,3 +69,4 @@ D:\MVC\color\Color\bin\System.Web.WebPages.Razor.xml
 D:\MVC\color\Color\obj\Debug\Color.csprojResolveAssemblyReference.cache
 D:\MVC\color\Color\obj\Debug\Color.dll
 D:\MVC\color\Color\obj\Debug\Color.pdb
+E:\GitHubApp\Color\Color\obj\Debug\Color.csprojResolveAssemblyReference.cache

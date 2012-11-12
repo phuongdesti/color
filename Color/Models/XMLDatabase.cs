@@ -28,6 +28,7 @@ namespace Color.Models
             MainStructure o = new MainStructure();
             o.a = this.a;
             o.name = this.name;
+            o.oColor = this.oColor;
             return o;
 
         }

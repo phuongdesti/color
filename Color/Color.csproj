@@ -134,6 +134,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Default1Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\testController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -232,6 +233,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Default1\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\test\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\test\Create.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
