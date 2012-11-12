@@ -13,16 +13,22 @@ namespace Color.Controllers
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
             MainStructure mt = new MainStructure();
-            mt.Load();
-            mt.oColor.Add(new ColorInfo() { Name = "", Code = "#0094ff;" });
-            mt.oColor.Add(new ColorInfo() { Name = "", Code = "#b6ff00;" });
-            mt.oColor.Add(new ColorInfo() { Name = "", Code = "#b6ff00;" });
-            mt.oColor.Add(new ColorInfo() { Name = "", Code = "#08bdf8;" });
-            mt.oColor.Add(new ColorInfo() { Name = "", Code = "#f3bf18;" });
-            mt.oColor.Add(new ColorInfo() { Name = "", Code = "#f784d8;" });
-            mt.oColor.Add(new ColorInfo() { Name = "", Code = "#08bdf8;" });
-            ViewBag.conme = Current.DataFolder();
-            //mt.Save("add colors");
+            try
+            {
+                mt.Load();
+                mt.oColor.Add(new ColorInfo() { Name = "", Code = "#0094ff;" });
+                mt.oColor.Add(new ColorInfo() { Name = "", Code = "#b6ff00;" });
+                mt.oColor.Add(new ColorInfo() { Name = "", Code = "#b6ff00;" });
+                mt.oColor.Add(new ColorInfo() { Name = "", Code = "#08bdf8;" });
+                mt.oColor.Add(new ColorInfo() { Name = "", Code = "#f3bf18;" });
+                mt.oColor.Add(new ColorInfo() { Name = "", Code = "#f784d8;" });
+                mt.oColor.Add(new ColorInfo() { Name = "", Code = "#08bdf8;" });
+                ViewBag.conme = Current.DataFolder();
+                mt.Save("add colors");
+            }
+            catch(Exception ex) {
+                ViewBag.errorms = ex.Message;
+            }
 
             return View();
         }                                                      
